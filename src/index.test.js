@@ -19,3 +19,11 @@ test('should return sum w.r.t addition of multiple nos if string contains multip
 test('should return sum w.r.t addition of multiple nos if string contains multiple chars seperated by ,|\n', () => {
     expect(add("1\n2,3")).toBe(6);
 });
+
+test('should return sum w.r.t addition of multiple nos if string contains multiple chars seperated by ,|\n', () => {
+    expect(add("1\n2,3")).toBe(6);
+});
+
+test('should return sum w.r.t addition of multiple nos if string contains multiple chars seperated by diff delimeter', () => {
+    expect(add("//;\n1;2")).toBe(3);
+});
