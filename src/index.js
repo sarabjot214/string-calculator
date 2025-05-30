@@ -1,6 +1,7 @@
 const add = (str) => {
-    if (!str.length) return 0;
-    else return parseInt(str);
+    const nums = str.split(',').map(Number)
+    const sum = nums.reduce(((sum, num) => sum + num), 0);
+    return sum;
 }
 
 module.exports = add;
