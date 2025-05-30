@@ -15,3 +15,7 @@ test('should return sum w.r.t addition of 2 nos if string contains 2 char sepera
 test('should return sum w.r.t addition of multiple nos if string contains multiple chars seperated by ,', () => {
     expect(add("1,2,3")).toBe(6);
 });
+
+test('should return sum w.r.t addition of multiple nos if string contains multiple chars seperated by ,|\n', () => {
+    expect(add("1\n2,3")).toBe(6);
+});
